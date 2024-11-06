@@ -292,13 +292,13 @@ footer {
         width: 40%;
 
         button {
-            height: 40%;
-            width: 70%;
+            height: 50%;
+            width: 60%;
         }
     }
 
     .header-content {
-        width: 57%;
+        width: 58%;
 
         h1 {
             font-size: 1.2rem ;
@@ -359,9 +359,11 @@ footer {
         margin-bottom: 5%;
     }
 
+ .nous{
     p {
         width: 100%;
     }
+ }
 }
 
 
