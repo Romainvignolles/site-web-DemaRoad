@@ -74,7 +74,7 @@ header {
     align-items: center;
     justify-content: center;
 
-    button {
+    .contactButton {
         background-color: #D9D9D9;
         border: none;
         height: 45%;
@@ -84,7 +84,10 @@ header {
         font-family: Arial, sans-serif;
         font-size: 0.85em;
         color: #555;
+    }
 
+    .contactIcon{
+        display: none;
     }
 }
 
@@ -294,11 +297,26 @@ footer {
     }
 
     .contact {
-        width: 40%;
+        width: 30%;
+    }
 
-        button {
-            height: 60%;
-            width: 60%;
+    .contactButton{
+        display: none;
+    }
+
+    .contactIcon{
+        display: flex !important;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        height: 60%;
+        width: 50%;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+
+        img{
+            height: 100%;
         }
     }
 
