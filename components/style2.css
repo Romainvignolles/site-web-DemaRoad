@@ -86,7 +86,7 @@ header {
         color: #555;
     }
 
-    .contactIcon{
+    .contactIcon {
         display: none;
     }
 }
@@ -297,14 +297,15 @@ footer {
     }
 
     .contact {
-        width: 30%;
+        width: 25%;
+        justify-content: flex-end !important;
     }
 
-    .contactButton{
+    .contactButton {
         display: none;
     }
 
-    .contactIcon{
+    .contactIcon {
         display: flex !important;
         height: 100%;
         align-items: center;
@@ -315,7 +316,7 @@ footer {
         border: none;
         cursor: pointer;
 
-        img{
+        img {
             height: 100%;
         }
     }
