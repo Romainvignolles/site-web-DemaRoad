@@ -288,11 +288,16 @@ footer {
 /*------------------------------------------------Responsive----------------------------------------------------*/
 
 @media screen and (max-width: 1024px) {
+
+    h2 {
+        font-size: 1.7rem;
+    }
+
     .contact {
         width: 40%;
 
         button {
-            height: 50%;
+            height: 60%;
             width: 60%;
         }
     }
@@ -301,7 +306,7 @@ footer {
         width: 58%;
 
         h1 {
-            font-size: 1.2rem ;
+            font-size: 1.2rem;
         }
     }
 
@@ -359,11 +364,13 @@ footer {
         margin-bottom: 5%;
     }
 
- .nous{
-    p {
-        width: 100%;
+    .nous {
+        width: 90%;
+
+        p {
+            width: 100%;
+        }
     }
- }
 }
 
 
