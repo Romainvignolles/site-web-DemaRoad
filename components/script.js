@@ -1,30 +1,25 @@
-let isPhone1Visible = false;
-let isPhone2Visible = false;
+document.addEventListener('DOMContentLoaded', function () {
+    const popup = document.getElementById('popup');
+    const closeButton = document.querySelector('.close');
+    const contactButtons = document.querySelectorAll('.contactButton, .contactIcon');
+    const popupContent = document.querySelector('.popup-content'); // Contenu du pop-up
 
-function togglePhone1() {
-    const phone1 = document.getElementById('phone1');
-    const btn1 = document.querySelector('.phone-btn1');
-    
-    if (isPhone1Visible) {
-        phone1.innerHTML = 'demaroad.drd@gmail.com'; 
-        btn1.innerHTML = 'Téléphone'; 
-    } else {
-        phone1.innerHTML = '06.64.49.48.54'; 
-        btn1.innerHTML = 'E-mail'; 
-    }
-    isPhone1Visible = !isPhone1Visible; 
-}
+    // Affiche le pop-up lorsqu'on clique sur un bouton de contact
+    contactButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            popup.style.display = 'flex';
+        });
+    });
 
-function togglePhone2() {
-    const phone2 = document.getElementById('phone2');
-    const btn2 = document.querySelector('.phone-btn2');
-    
-    if (isPhone2Visible) {
-        phone2.innerHTML = 'demaroad.drd@gmail.com'; 
-        btn2.innerHTML = 'Téléphone'; 
-    } else {
-        phone2.innerHTML = '06.80.76.60.43';
-        btn2.innerHTML = 'E-mail';
-    }
-    isPhone2Visible = !isPhone2Visible;
-}
+    // Ferme le pop-up lorsqu'on clique sur le bouton de fermeture
+    closeButton.addEventListener('click', () => {
+        popup.style.display = 'none';
+    });
+
+    // Ferme le pop-up si on clique en dehors de son contenu
+    window.addEventListener('click', (event) => {
+        if (event.target === popup) {
+            popup.style.display = 'none';
+        }
+    });
+});
